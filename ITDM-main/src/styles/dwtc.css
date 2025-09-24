@@ -1,0 +1,48 @@
+/* --- DIN Pro font faces (from the zip) --- */
+@font-face {
+  font-family: "DINPro";
+  src: url("../assets/fonts/DIN.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("../assets/fonts/DIN Medium.ttf") format("truetype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("../assets/fonts/DIN Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+/* (Optional) include 300/600/800/900 weights from the OTFs if you’ll use them */
+
+/* --- Design tokens (from the CSS used across components) --- */
+:root {
+  /* Neutrals used in the DS CSS */
+  --neutral-900: #231f20;
+  --neutral-800: #3f3f3f;
+  --neutral-700: #4a4a4a;
+  --neutral-600: #58595b;
+  --neutral-400: #cccccc;
+  --neutral-300: #e5e5e5;
+  --neutral-200: #eeeeee;
+  --neutral-100: #f5f5f5;
+  --neutral-50:  #f7f7f7;
+
+  /* Brand reds seen in components */
+  --brand-600: #be354c; /* primary */
+  --brand-700: #aa374a; /* hover */
+  --brand-800: #a83649; /* emphasis */
+
+  /* Status / accents found in styles */
+  --warning-600: #f79009;
+  --danger-600:  #f50c0c;
+  --success-600: #4e801f;
+
+  /* Misc */
+  --border-subtle: #e5e5e5;
+  --panel-bg: #ffffff;
+}
+
+/* Base typography */
+* { font-family: "DINPro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
